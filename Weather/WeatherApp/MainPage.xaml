@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WeatherApp"
+             x:Class="WeatherApp.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <StackLayout Orientation="Horizontal">
+            <DatePicker Format="MM/dd" Grid.Row="1" Grid.Column="1" HorizontalOptions="Start"  FontSize="40" TextColor="Blue"/>
+            <Button Text="更新" Grid.Column="2" HorizontalOptions="Start" x:Name="Button1"/>
+
+
+        </StackLayout>
+
+        <Label Text="直近の予定" FontSize= "15" TextColor="Blue" HorizontalOptions="Center"/>
+        <Label Text="" x:Name="today" FontSize="20" TextColor="Black" HorizontalOptions="Center"/>
+        <Label Text="行先" FontSize= "15" TextColor="Blue" HorizontalOptions="Center"/>
+        <Label Text="" x:Name="venuetoday" FontSize="20" TextColor="Black" HorizontalOptions="Center"/>
+        <Label Text="行先天気" FontSize= "15" TextColor="Blue" HorizontalOptions="Center"/>
+        <Label Text="" x:Name="weathertoday" FontSize="20" TextColor="Black" HorizontalOptions="Center"/>
+        <Label Text="予定内容" FontSize= "15" TextColor="Blue" HorizontalOptions="Center"/>
+        <Label Text="" x:Name="summarytoday" FontSize="20" TextColor="Black" HorizontalOptions="Center"/>
+        <Label></Label>
+
+        <ScrollView>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0" Text="日時" HorizontalOptions="Center" FontSize="15" TextColor="Blue" />
+                <Label Grid.Column="0" Grid.Row="1" Text="" HorizontalOptions="Center" FontSize="13" x:Name="day1" TextColor="Black"/>
+                <Label Grid.Column="0" Grid.Row="2" Text="" HorizontalOptions="Center" FontSize="13" x:Name="day2" TextColor="Black"/>
+                <Label Grid.Column="0" Grid.Row="3" Text="" HorizontalOptions="Center" FontSize="13" x:Name="day3" TextColor="Black"/>
+                <Label Grid.Column="0" Grid.Row="4" Text="" HorizontalOptions="Center" FontSize="13" x:Name="day4" TextColor="Black"/>
+                <Label Grid.Column="0" Grid.Row="5" Text="" HorizontalOptions="Center" FontSize="13" x:Name="day5" TextColor="Black"/>
+                <Label Grid.Column="0" Grid.Row="6" Text="" HorizontalOptions="Center" FontSize="13" x:Name="day6" TextColor="Black"/>
+                <Label Grid.Column="1" Grid.Row="0" Text="行先" HorizontalOptions="Center" FontSize="15" TextColor="Blue"/>
+                <Label Grid.Column="1" Grid.Row="1" Text="" HorizontalOptions="Center" FontSize="13" x:Name="venue1" TextColor="Black"/>
+                <Label Grid.Column="1" Grid.Row="2" Text="" HorizontalOptions="Center" FontSize="13" x:Name="venue2" TextColor="Black"/>
+                <Label Grid.Column="1" Grid.Row="3" Text="" HorizontalOptions="Center" FontSize="13" x:Name="venue3" TextColor="Black"/>
+                <Label Grid.Column="1" Grid.Row="4" Text="" HorizontalOptions="Center" FontSize="13" x:Name="venue4" TextColor="Black"/>
+                <Label Grid.Column="1" Grid.Row="5" Text="" HorizontalOptions="Center" FontSize="13" x:Name="venue5" TextColor="Black"/>
+                <Label Grid.Column="1" Grid.Row="6" Text="" HorizontalOptions="Center" FontSize="13" x:Name="venue6" TextColor="Black"/>
+                <Label Grid.Column="2" Grid.Row="0" Text="行先天気" HorizontalOptions="Center" FontSize="15" TextColor="Blue"/>
+                <Label Grid.Column="2" Grid.Row="1" Text="" HorizontalOptions="Center" FontSize="13" x:Name="weather1" TextColor="Black"/>
+                <Label Grid.Column="2" Grid.Row="2" Text="" HorizontalOptions="Center" FontSize="13" x:Name="weather2" TextColor="Black"/>
+                <Label Grid.Column="2" Grid.Row="3" Text="" HorizontalOptions="Center" FontSize="13" x:Name="weather3" TextColor="Black"/>
+                <Label Grid.Column="2" Grid.Row="4" Text="" HorizontalOptions="Center" FontSize="13" x:Name="weather4" TextColor="Black"/>
+                <Label Grid.Column="2" Grid.Row="5" Text="" HorizontalOptions="Center" FontSize="13" x:Name="weather5" TextColor="Black"/>
+                <Label Grid.Column="2" Grid.Row="6" Text="" HorizontalOptions="Center" FontSize="13" x:Name="weather6" TextColor="Black"/>
+                <Label Grid.Column="3" Grid.Row="0" Text="予定" HorizontalOptions="Center" FontSize="15" TextColor="Blue"/>
+                <Label Grid.Column="3" Grid.Row="1" Text="" HorizontalOptions="Center" FontSize="13" x:Name="summary1" TextColor="Black"/>
+                <Label Grid.Column="3" Grid.Row="2" Text="" HorizontalOptions="Center" FontSize="13" x:Name="summary2" TextColor="Black"/>
+                <Label Grid.Column="3" Grid.Row="3" Text="" HorizontalOptions="Center" FontSize="13" x:Name="summary3" TextColor="Black"/>
+                <Label Grid.Column="3" Grid.Row="4" Text="" HorizontalOptions="Center" FontSize="13" x:Name="summary4" TextColor="Black"/>
+                <Label Grid.Column="3" Grid.Row="5" Text="" HorizontalOptions="Center" FontSize="13" x:Name="summary5" TextColor="Black"/>
+                <Label Grid.Column="3" Grid.Row="6" Text="" HorizontalOptions="Center" FontSize="13" x:Name="summary6" TextColor="Black"/>
+
+
+            </Grid>
+        </ScrollView>
+
+    </StackLayout>
+</ContentPage>
